@@ -1,23 +1,22 @@
-# Project: Project2
-# Makefile created by Dev-C++ 5.4.2
+# Project: Проект1
+# Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o
-LINKOBJ  = main.o
-LIBS     = -L"D:/Profile/Desktop/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
-INCS     = -I"D:/Profile/Desktop/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
-CXXINCS  = -I"D:/Profile/Desktop/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
-BIN      = Project2.exe
+OBJ      = проект/main2.o
+LINKOBJ  = проект/main2.o
+LIBS     = -L"D:/Profile/Desktop/уник/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = 
+CXXINCS  = -I"D:/Profile/Desktop/уник/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = Проект1.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
-RM       = rm -f
+RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
 
 all: all-before $(BIN) all-after
-
 
 clean: clean-custom
 	${RM} $(OBJ) $(BIN)
@@ -25,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-main.o: main.cpp
-	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+проект/main2.o: проект/main2.cpp
+	$(CPP) -c проект/main2.cpp -o проект/main2.o $(CXXFLAGS)
