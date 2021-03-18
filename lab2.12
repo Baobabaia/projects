@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout<<"Результат - ";
+  int number = 4567;
+  cout<<number%10;
+  number /= 10;
+  cout<<number%10;
+  number /= 10;
+  cout<<number%10;
+  number /= 10;
+  cout<<number%10;
+  return 0;
+}
