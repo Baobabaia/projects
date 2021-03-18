@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout<<"Депозитний калькулятор: ";
+  int daysinyear = 395;
+  int daysinmonth = 30;
+  float depositamount = 100;
+  int numberofmonths = 10;
+  float annualrate = 5;
+  float profit;
+  cout<<"Прибуток з депозиту за місяць: ";
+  profit = depositamount * (annualrate/100) / daysinyear * daysinmonth;
+  cout<< depositamount<< " * "<<annualrate<<"%  / "<<daysinyear
+    <<" * "<<daysinmonth<< " = "<<profit<<" $"<<endl;
+    cout<<"За весь термін депозиту: ";
+    profit *= numberofmonths;
+    cout<<profit<<" $" <<endl;
+    cout<<"Загальна сума до виплати в кінці терміну: ";
+    cout<<profit+depositamount<<"$"<<endl;
+  return 0;
+}
