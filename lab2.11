@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int minutes = 1590;
+  cout << minutes/60 << " годин ";
+  cout << minutes - (60 * (minutes / 60)) << " хвилин";
+  return 0;
+}
