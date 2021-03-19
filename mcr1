@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std
+int main() {
+	/* Виконання завдання №1 варіант № 10, студентка групи 109, Кудіна Катерина
+	U = exp(x*x*x)+cos*cos(x-4)/atanx+5.2y
+	
+	/Завдання №2
+	
+	int N;
+	N=100
+	if(N%2==0)
+	cout<<"Число парне"<<endl;
+	else
+	cout<<"Число непарне"<<endl;
+	if(N % 7==0)
+	cout<<"Число ділиться на 7"<<endl;
+	else(N % 3!=0);
+	cout<<"Число не ділиться на 3"<<endl;
+	if(N % 5!=0)
+	cout<<"Число не ділиться на 5"<<endl;
+	else(N % 4!=0);
+	cout<<"Число не ділиться на 4"<<endl;
+	if(N % 8==0)
+	cout<<"Число ділиться на 8"<<endl;
+	if(N % 11==0)
+	cout<<"Число ділиться на 11"<<endl;
+	return 0;
+}
